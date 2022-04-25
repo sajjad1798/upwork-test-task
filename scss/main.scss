@@ -1,0 +1,203 @@
+// google font
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap");
+
+@import "./theme.scss";
+
+//  rest css
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+img {
+  width: 100%;
+}
+body {
+  font-family: "Roboto", sans-serif; // I didn't get real font I'm using robot for demo
+  background: $light-gray-100;
+}
+// Gloabl classess
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  // container responsive
+  @media (min-width: $screen-sm-min) {
+    max-width: 540px;
+  }
+  @media (min-width: $screen-md-min) {
+    max-width: 720px;
+  }
+  @media (min-width: $screen-lg-min) {
+    max-width: 960px;
+  }
+  @media (min-width: $screen-xl-min) {
+    max-width: 1140px;
+  }
+  @media (min-width: $screen-xll-min) {
+    max-width: 1380px;
+  }
+}
+.d-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.justify-content-between {
+  -webkit-box-pack: justify !important;
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
+}
+.justify-content-center {
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
+.align-items-center {
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.col {
+  flex-basis: 25%;
+  @media (min-width: $screen-sm-min) {
+    flex-basis: 100%;
+  }
+  @media (min-width: $screen-md-min) {
+    flex-basis: 50%;
+  }
+  @media (min-width: $screen-lg-min) {
+    flex-basis: 32%;
+  }
+}
+.gap-20 {
+  gap: 20px;
+}
+// gloabl classess end
+
+.breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  list-style: none;
+  li {
+    color: $light-black-100;
+    &::after {
+      display: inline-block;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      color: #6c757d;
+      content: "/\00a0";
+    }
+    &:last-child::after {
+      content: "";
+    }
+  }
+  .breadcrum-item {
+    color: $light-gray-200;
+  }
+}
+
+.page-heading {
+  margin: 22px 0px;
+}
+.team-card-container {
+  padding: 40px;
+  background-color: $white-color;
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+  margin-bottom: 40px;
+}
+
+.card-container {
+  border: 1px solid $light-gray-100;
+  border-radius: 4px;
+  padding: 20px 15px;
+}
+.add-new-card-container {
+  border: 1px dashed $light-gray-200;
+  flex-direction: column;
+
+  img {
+    max-width: 100px;
+    cursor: pointer;
+  }
+}
+.card-header {
+  h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    color: $light-black-100;
+  }
+  img {
+    max-width: 50px;
+  }
+}
+.card-profile {
+  ul {
+    li {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      color: $light-black-100;
+      &:last-child {
+        font-weight: 300;
+        font-size: 14px;
+      }
+    }
+  }
+  img {
+    max-width: 70px;
+    margin-left: -20px;
+  }
+}
+.card-info {
+  margin: 20px 0px;
+  h4 {
+    font-size: 22px;
+    color: $light-black-100;
+  }
+  span {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $light-gray-200;
+  }
+}
+.progress-bar {
+  margin-bottom: 20px;
+}
+.team-member-container {
+  img {
+    max-width: 200px;
+  }
+}
+
+.btn {
+  min-width: 120px;
+  min-height: 40px;
+  border-radius: 4px;
+  border: 1px solid $light-gray-200;
+  background-color: transparent;
+  cursor: pointer;
+}

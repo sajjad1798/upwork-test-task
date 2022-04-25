@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #e5e5e5;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1380px;
+  }
+}
+
+.d-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.justify-content-between {
+  -webkit-box-pack: justify !important;
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
+}
+
+.justify-content-center {
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
+.align-items-center {
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+@media (min-width: 576px) {
+  .col {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col {
+    -ms-flex-preferred-size: 32%;
+        flex-basis: 32%;
+  }
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.breadcrumb li {
+  color: #1c2b39;
+}
+
+.breadcrumb li::after {
+  display: inline-block;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: #6c757d;
+  content: "/\00a0";
+}
+
+.breadcrumb li:last-child::after {
+  content: "";
+}
+
+.breadcrumb .breadcrum-item {
+  color: #6c757d;
+}
+
+.page-heading {
+  margin: 22px 0px;
+}
+
+.team-card-container {
+  padding: 40px;
+  background-color: #ffffff;
+  -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+          filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+  margin-bottom: 40px;
+}
+
+.card-container {
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  padding: 20px 15px;
+}
+
+.add-new-card-container {
+  border: 1px dashed #6c757d;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.add-new-card-container img {
+  max-width: 100px;
+  cursor: pointer;
+}
+
+.card-header h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  color: #1c2b39;
+}
+
+.card-header img {
+  max-width: 50px;
+}
+
+.card-profile ul li {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #1c2b39;
+}
+
+.card-profile ul li:last-child {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.card-profile img {
+  max-width: 70px;
+  margin-left: -20px;
+}
+
+.card-info {
+  margin: 20px 0px;
+}
+
+.card-info h4 {
+  font-size: 22px;
+  color: #1c2b39;
+}
+
+.card-info span {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #6c757d;
+}
+
+.progress-bar {
+  margin-bottom: 20px;
+}
+
+.team-member-container img {
+  max-width: 200px;
+}
+
+.btn {
+  min-width: 120px;
+  min-height: 40px;
+  border-radius: 4px;
+  border: 1px solid #6c757d;
+  background-color: transparent;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */
